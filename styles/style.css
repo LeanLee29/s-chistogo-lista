@@ -1,151 +1,112 @@
+
 body {
   margin: 0 auto;
   padding: 0;
-  background: var(--black-bg, #131313);
-  width: 360px;
   height: 4160px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 360px;
+  background-color: #1e1e1e;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
 p,
+h1,
 ul,
 ol,
 blockquote {
   margin: 0;
   padding: 0;
 }
-.header {
-  display: flex;
+
+main{
+  background: var(--black-bg, #131313);
+}
+
+.header{
   width: 360px;
   height: 132px;
+  display: flex;
   justify-content: space-between;
+  background: var(--black-bg, #131313);
 }
 
-.header__logo {
-  padding: 24px 0px 24px 20px;
+.header__logo{
+  padding-top: 24px;
+  padding-left: 20px;
 }
 
-.header__menu {
+.header__logo-image{
+  width: 78.453px;
+height: 15.432px;
+}
+
+.header__menu{
+  padding-top: 24px;
+  padding-right: 20px;
+  width: 75px;
+  height: 84px;
+}
+.header__menu-list{
   display: flex;
   flex-direction: column;
   gap: 12px;
-  margin-right: 20px;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  color: var(--text-light, #f5f5f5);
-  font-family: Inter;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 19.2px;
 }
 
-.header__menu-link {
-  color: var(--text-light, #f5f5f5);
+.header__menu-item{
+color: var(--text-light, #F5F5F5);
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 19.2px; /* 120% */
 }
 
-.header__menu-link_main {
-  height: 20px;
-  width: 64px;
-}
-.header__menu-link_about {
-  height: 20px;
-  width: 44px;
+.cover{
+width: 340px;
+min-height: 221px;
+padding-left: 20px;
 }
 
-.header__menu-link_contacts {
-  height: 20px;
-  width: 75px;
+
+.cover__title{
+background-image: url(../images/cover.svg);
+background-repeat: no-repeat;
+background-position: bottom;
+width: 339px;
+padding-top: 7px;
 }
 
-.cover {
-  width: 340px;
-  height: 221px;
-  background-image: url(../images/cover.svg);
-  background-repeat: no-repeat;
-  background-position: bottom;
-  margin-left: 21px;
-  margin-top: 7px;
-}
-
-.accent-span {
-  width: 339px;
-  height: 198px;
-  color: #fff;
-  font-family: EB Garamond;
-  font-size: 72px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 100%;
-}
-
-.cover-title {
-  text-align: left;
+.cover__title .accent-span{
   display: block;
-  margin-right: 288px;
-  margin-left: 1px;
 }
 
-.text-center {
+.cover__title .text-left{
+  width: 52px;
+  height: 72px;
+}
+
+.cover__title .text-center{
   text-align: center;
-  display: block;
   width: 226px;
   height: 72px;
-  margin-right: 67px;
-  margin-left: 46px;
+  margin: 0px 67px 0px 46px;
 }
 
-.text-right {
+.cover__title .text-right{
   text-align: right;
-  display: block;
   width: 161px;
   height: 72px;
-  margin-right: 24px;
-  margin-left: 154px;
+  margin: 0px 24px 5px 154px;
 }
-
-.intro {
-  width: 320px;
-  height: 453px;
-  margin: 30px 20px 38px 20px;
+.cover__title{
+color: #FFF;
+font-family: EB Garamond;
+font-size: 72px;
+font-style: normal;
+font-weight: 400;
+line-height: 100%; /* 72px */
 }
-
-.intro__heading {
-  color: var(--text-gray, #ccc);
-  font-family: Inter;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 120%;
-  display: flex;
-}
-
-.intro__title {
-  margin: 0px auto 0px 0px;
-}
-
-.intro__date {
-  white-space: nowrap;
-  justify-content: space-between;
-}
-
-.intro__main-text {
-  color: #f5f5f5;
-  font-family: Inter;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 21.6px;
-  display: inline-flex;
-  flex-direction: column;
-  gap: 24px;
-  margin-top: 24px;
-}
+/*
 
 .reasons {
   background: var(--yellow-bg, #fee42a);
@@ -173,7 +134,7 @@ blockquote {
   text-align: right;
 }
 
-.reaasons__text-left {
+.reasons__text-left {
   width: 320px;
   height: 31.5px;
 }
@@ -284,9 +245,9 @@ blockquote {
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
-  line-height: 135%; /* 21.6px */
+  line-height: 135%;
 }
-
+/*
 .card__title {
   color: #f5f5f5;
   font-family: EB Garamond;
@@ -332,7 +293,6 @@ blockquote {
   border-radius: 30px;
   background: var(--yellow-bg, #fee42a);
 }
-
 .footer {
   display: flex;
   justify-content: space-between;
