@@ -1,8 +1,7 @@
-
 body {
   margin: 0 auto;
   padding: 0;
-  height: 4160px;
+  min-height: 4160px;
   box-sizing: border-box;
   width: 100%;
   max-width: 360px;
@@ -13,101 +12,154 @@ p,
 h1,
 ul,
 ol,
+a,
 blockquote {
   margin: 0;
   padding: 0;
 }
 
-main{
+main {
   background: var(--black-bg, #131313);
 }
 
-.header{
+.header {
   width: 360px;
   height: 132px;
   display: flex;
+  flex-shrink: 0;
   justify-content: space-between;
   background: var(--black-bg, #131313);
 }
 
-.header__logo{
+.header__logo {
   padding-top: 24px;
   padding-left: 20px;
 }
 
-.header__logo-image{
-  width: 78.453px;
-height: 15.432px;
+.header__logo-image {
+  width: 78.45313px;
+  height: 15.43182px;
+  flex-shrink: 0;
 }
 
-.header__menu{
+.header__menu {
   padding-top: 24px;
   padding-right: 20px;
   width: 75px;
   height: 84px;
 }
-.header__menu-list{
+.header__menu-list {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  padding: 0;
 }
 
-.header__menu-item{
-color: var(--text-light, #F5F5F5);
-font-family: Inter;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 19.2px; /* 120% */
+.header__menu-link {
+  text-decoration: none;
 }
 
-.cover{
-width: 340px;
-min-height: 221px;
-padding-left: 20px;
+.header__menu-item {
+  color: var(--text-light, #f5f5f5);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19.2px;
+  height: 20px;
 }
 
-
-.cover__title{
-background-image: url(../images/cover.svg);
-background-repeat: no-repeat;
-background-position: bottom;
-width: 339px;
-padding-top: 7px;
+.cover {
+  width: 340px;
+  min-height: 221px;
+  padding-left: 20px;
+  padding-top: 7px;
+  padding-bottom: 30px;
 }
 
-.cover__title .accent-span{
+.cover__title {
+  background-image: url(../images/cover.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  width: 339px;
+  min-height: 221px;
+}
+
+.cover__title .accent-span {
   display: block;
 }
 
-.cover__title .text-left{
+.cover__title .text-left {
   width: 52px;
   height: 72px;
 }
 
-.cover__title .text-center{
+.cover__title .text-center {
   text-align: center;
   width: 226px;
   height: 72px;
   margin: 0px 67px 0px 46px;
 }
 
-.cover__title .text-right{
+.cover__title .text-right {
   text-align: right;
   width: 161px;
   height: 72px;
-  margin: 0px 24px 5px 154px;
+  padding-left: 154px;
 }
-.cover__title{
-color: #FFF;
-font-family: EB Garamond;
-font-size: 72px;
-font-style: normal;
-font-weight: 400;
-line-height: 100%; /* 72px */
+.cover__title {
+  color: #fff;
+  font-family: EB Garamond;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
 }
-/*
+.intro {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.intro__heading {
+  display: flex;
+  justify-content: space-between;
+  width: 320px;
+  height: 39px;
+}
 
+.intro__main-text {
+  color: #f5f5f5;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21.6px;
+  width: 320px;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-bottom: 37px;
+}
+
+.intro__date {
+  color: var(--text-gray, #ccc);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19.2px;
+}
+
+.intro__title {
+  color: var(--text-gray, #ccc);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19.2px;
+}
 .reasons {
   background: var(--yellow-bg, #fee42a);
   width: 320px;
@@ -151,7 +203,7 @@ line-height: 100%; /* 72px */
 }
 
 .content-section__list {
-  width: 304px;
+  min-width: 304px;
   padding-left: 17px;
 }
 .content-section__list-item {
@@ -195,11 +247,18 @@ line-height: 100%; /* 72px */
   height: 64px;
 }
 
-.how-to .accent-span .text-right {
+.accent-span .text-right {
+  display: block;
   width: 320px;
   height: 32px;
   text-align: right;
   margin: 0;
+  color: #f5f5f5;
+  font-family: EB Garamond;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32.2px;
 }
 
 .how-to .content-section__subtitle {
@@ -247,7 +306,7 @@ line-height: 100%; /* 72px */
   font-weight: 700;
   line-height: 135%;
 }
-/*
+
 .card__title {
   color: #f5f5f5;
   font-family: EB Garamond;
