@@ -164,7 +164,7 @@ main {
   background: var(--yellow-bg, #fee42a);
   width: 320px;
   height: 1288px;
-  padding: 40px 20px;
+  padding: 40px 19px;
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -231,7 +231,7 @@ main {
 .how-to {
   background: var(--black-bg, #131313);
   width: 320px;
-  height: 1749px;
+  height: 1769px;
   padding: 40px 20px;
   display: inline-flex;
   flex-direction: column;
@@ -357,10 +357,10 @@ main {
 .footer {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
   border-top: 1px solid var(--yellow-bg, #fee42a);
   width: 360px;
   align-items: center;
+  background: var(--black-bg, #131313);
 }
 .footer__copy {
   padding: 20px;
