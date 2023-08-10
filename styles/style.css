@@ -10,6 +10,8 @@ body {
 
 p,
 h1,
+h2,
+h3,
 ul,
 ol,
 a,
@@ -84,6 +86,7 @@ main {
   background-image: url(../images/cover.svg);
   background-repeat: no-repeat;
   background-position: bottom;
+  background-size:contain;
   width: 339px;
   min-height: 221px;
   color: #fff;
@@ -184,6 +187,7 @@ main {
   display: block;
   width: 320px;
   height: 135px;
+  color: #131313;
 }
 
 .reasons__text-right {
